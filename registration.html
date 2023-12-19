@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <title>MSWD</title>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+    </head>
+    <body bgcolor="#B6C4B6">
+        <h2 align="center">Student Information System</h2>
+        
+        <nav>
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="registration.html">Registration</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="https://newerp.kluniversity.in/" target="_blank">ERP</a></li>
+        </ul>
+        </nav>
+        <br>
+        <center>
+        <form method="post" action="#">
+            <table>
+                <tr>
+                    <td><label>Enter Student ID </label></td>
+                    <td><input type="number" name="sid" required/></td>
+                    </tr>
+                    <tr>
+                    <td><Label>Enter Student Full Name </Label></td>
+                    <td><input type="text" name="sname" required/></td>
+                </tr>
+                <tr>
+                    <td><label>Select Gender </label></td>
+                    <td>
+                        <input type="radio" name="gender" value="MALE" required/>Male
+                        <input type="radio" name="gender" value="FEMALE" required/>Female
+                        <input type="radio" name="gender" value="OTHERS" required/>Others
+                    </td> 
+                </tr>
+                <tr>
+                    <td><Label>Select Student Date Of Birth </Label></td>
+                    <td><input type="date" name="sdob" required/></td>
+                </tr>
+                <tr>
+                    <td><label>Select Department</label></td>
+                    <td>
+                        <select name="dept" required>
+                        <option value="">---SELECT---</option>
+                        <option value="CSE">CSE</option>
+                        <option value="CS&IT">CS&IT</option>
+                        <option value="AIDS">AIDS</option>
+                        </select>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Select Program</label></td>
+                    <td>
+                        <select name="program" required >
+                        <option value="">---SELECT---</option>
+                        <option value="B.TECH.">B.TECH.</option>
+                        <option value="M.TECH.">M.TECH.</option>
+                        </select>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Select Skill(s)</label></td>
+                    <td>
+                        <input type="checkbox" name="skills" value="C" required/>C
+                        <input type="checkbox" name="skills" value="C++" required/>C++
+                        <input type="checkbox" name="skills" value="JAVA" required/>JAVA
+                    </td> 
+                </tr>
+                <tr>
+                    <td><Label>Enter Student Pursuing Year </Label></td>
+                    <td> <input type="number" name="syear" min="1" max="4" required/>
+                       
+                    </td>
+                </tr>
+                <tr>
+                    <td><Label>Enter Student CGPA </Label></td>
+                    <td><input type="number" name="scgpa" step="0.01" min=0.00" max="10.00"required/></td>
+                </tr>
+                <tr>
+                    <td><Label>Enter Student Backlogs </Label></td>
+                    <td><input type="number" name="sback" min="0" max="20" required/></td>
+                </tr>
+                <tr>
+                    <td><Label>Enter Student Email ID </Label></td>
+                    <td><input type="email" name="semail" required/></td>
+                </tr>
+                <tr>
+                    <td><Label>Enter Password </Label></td>
+                    <td><input type="password" name="spwd" required/></td>
+                </tr>
+                <tr>
+                    <td><label>Enter Contact no</label></td>
+                    <td><input type="text" name="scontact" pattern="[6789][0-9]{9}" placeholder="MUST BE 10 DIGITS" required/></td>
+                    </tr>
+                    <tr>
+                        <td><label>Enter Adress</label></td>
+                        <td><textarea name="saddress" required></textarea></td>
+                        </tr>
+                <tr align="center">
+
+                    <td >
+                        <input type="submit" value="Register" class="button"/>
+                    </td>
+                    <td >
+                        <input type="reset" value="Clear" class="button"/>  
+                    </td>
+                </tr>
+            </table>
+
+        </form>
+    </center>
+    </body>
+</html>
